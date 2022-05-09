@@ -1,0 +1,27 @@
+# Opdracht-Queue-Week-2
+Het is bedoeling dat je bij het uitwerken van deze opgave gebruik maakt van de programmeertaal Java en de IDE IntelliJ. Deze code moet ingediend worden voor de volgende les door deze te pushen naar deze github Repository. Deze opgave wordt in groepjes van 2 gemaakt. Het is niet noodzakelijk om voor deze opgaven elke keer dezelfde groep te vormen.
+
+Vergeet ook zeker niet een leerverslag toe te voegen zoals beschreven op Toledo
+
+## Opdracht
+Maak een IntelliJ project aan in een folder met de naam `QueueTDD`. In dit project schrijf je de code: een class queue en een testclass.
+
+**Implementeer een klasse `Queue` door middel van het TDD proces.** Een queue implementeert een wachtrij waar achteraan elementen kunnen toegevoegd worden en het voorste element kan worden afgenomen.
+Een queue heeft 2 methods
+- `store` welke een `Integer` als argument heeft
+- `release` welke een `Integer` returned.
+
+Elk requirement moet getest worden. Maak een testclass en schrijf eerst een falende test voor je code toevoegt aan Queue. Vermeld bij elke test welke requirement deze test. Vergeet ook geen gepaste javadoc toe te voegen.
+
+De elementen moeten van het type `Integer` zijn. (niet int maar Integer).
+
+Voor requirement d gebruik je een simpele array `Integer[]`.
+
+Bij requirement e denk aan edge cases. Wat gebeurt er als ...? Het programma mag niet crashen.
+
+## Requirements
+- [ ] a) A queue can store(in memory) an element
+- [ ] b) A queue can release(return) the same element that was previously stored.
+- [ ] c) A released element is no longer stored. Releasing an element that is no longer stored will return null;
+- [ ] d) A queue can store multiple elements. The order of the released elements is the order of the stored elements. E.g. if you store 69 and 96, the first release will release 69, the second will release 96.
+- [ ] e) A queue has a maximum number of elements it can store at one point in time (= max size of the memory). This maximum is only set when the queue is created (constructor) and is 5 when omitted. Thus if a queue is created without an explicit maximum, the maximum is 5.
